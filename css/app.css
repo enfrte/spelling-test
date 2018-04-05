@@ -1,0 +1,29 @@
+/* Customise OpenIconic icon font */
+.oi.oi-play-circle {
+  font-size: 1.7rem;
+  color: 	#282828;
+}
+
+#style-override .play-button {
+  background-color: lightgray;
+  line-height: 1rem;
+
+}
+
+.correct-answer {
+  color: green;
+}
+
+.wrong-answer {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .container{
+      max-width: 800px;
+  }
+}
