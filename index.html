@@ -25,7 +25,7 @@
     <form v-on:submit.prevent>
       <div id="accordion">
 
-        <div v-for="(sentence, key) in sentences" :key="sentence.id">
+        <div v-for="(sentence, key) in sentences" v-bind:key="key">
 
           <div class="card">
 
@@ -116,8 +116,8 @@ var app = new Vue({
       userAnswer = processAnswer(userAnswer);
       testAnswer = processAnswer(sourceSentence);
       
-      console.log(userAnswer);
-      console.log(testAnswer);
+      //console.log(userAnswer);
+      //console.log(testAnswer);
 
       if(testAnswer === userAnswer){
         //console.log("Correct answer");
