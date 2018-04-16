@@ -2,7 +2,7 @@
 
 ## Information
 
-This is Finnish spelling proficiency test. Made with VueJS and BootStrap4. 
+This is a Finnish spelling proficiency test. Made with VueJS and BootStrap4. 
 
 ### Live demo
 
