@@ -60,7 +60,7 @@
                 </div>
                 
                 <div class="form-group">
-                  <button v-on:click="showAnswer(key)" class="btn btn-success btn-block" >Show Answer</button>
+                  <button v-on:click="Vue.set(this.showAnswers, key, true)" class="btn btn-success btn-block" >Show Answer</button>
                 </div>
                 
                 <div v-if="showAnswers[key]">
@@ -131,10 +131,6 @@ var app = new Vue({
         Vue.set(this.correctAnswer, key, false);
         Vue.set(this.wrongAnswer, key, true);
       }
-    },
-    // show the user the answer
-    showAnswer: function(key){
-      Vue.set(this.showAnswers, key, true);
     },
 
   },
