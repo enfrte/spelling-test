@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="form-group">
-                  <input v-bind:style="answerInputElBorder[key]" class="form-control" v-bind:id="'sentence-'+key" type="text" v-model="answers[key]" placeholder="Type what you hear">
+                  <input v-on:keydown.enter.prevent v-on:keyup.enter="checkAnswer(answers, sentence.source, key)" v-bind:style="answerInputElBorder[key]" class="form-control" v-bind:id="'sentence-'+key" type="text" v-model="answers[key]" placeholder="Type what you hear">
                   <div v-bind:class="correctAnswer[key] === true ? 'correct-answer' : 'hide'" >Looks good!</div>
                   <div v-bind:class="wrongAnswer[key] === true ? 'wrong-answer' : 'hide'" >There seems to be a mistake.</div>
                 </div>
