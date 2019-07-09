@@ -6,7 +6,7 @@ This is a Finnish spelling proficiency test. Made with VueJS and BootStrap4.
 
 ### Live demo
 
-http://codinginthecold.tk/demos/spelling-test/
+http://codinginthecold.byethost5.com/demos/spelling-test/
 
 ### Screenshot
 
